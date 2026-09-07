@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="The portfolio of designer Indy Teunissen." />
+		<title>Made by Indy.</title>
+		<link rel="stylesheet" href="style.css" />
+		<script src="script.js" defer></script>
+	</head>
+	<body>
+		<header class="site-header">
+			<a class="brand" href="#home" aria-label="Made by Indy home">
+				<span class="brand-mark" aria-hidden="true"><span></span></span>
+				<span>Indy Teunissen <b>|</b> Est. 2023</span>
+			</a>
+
+			<button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+				<span></span>
+				<span></span>
+				<span class="sr-only">Open navigation</span>
+			</button>
+
+			<nav class="site-nav" id="site-nav" aria-label="Main navigation">
+				<a class="active" href="#home">Home</a>
+				<a href="#projects">Projects</a>
+				<a href="#about">About</a>
+				<a href="#contact">Contact</a>
+			</nav>
+		</header>
+
+		<main>
+			<section class="hero" id="home">
+				<div class="hero-copy">
+					<div class="accent-line" aria-hidden="true"></div>
+					<div>
+						<p class="eyebrow">Portfolio / Selected work</p>
+						<h1>Made by<br /><strong>Indy.</strong></h1>
+						<p class="intro">Hi, welcome to my portfolio!<br />
+							I’m a designer who enjoys learning new things and constantly developing my skills. I like to work with precision and pay close attention to the details. When something doesn’t work out right away, I keep looking for a solution and don’t give up easily. On this website, I’d love to take you along on my creative journey and show you some of my work.</p>
+					</div>
+				</div>
+				<div class="hero-image-wrap">
+					<img src="profielfoto.jpg" alt="Indy Teunissen overlooking a city at night" />
+				</div>
+			</section>
+
+			<section class="projects section-rule" id="projects">
+				<div class="section-heading">
+					<p class="eyebrow">02 / My work</p>
+					<h2>A collection of my<br /><em>projects, ideas</em> &amp; creations.</h2>
+				</div>
+				<div class="project-filter" role="tablist" aria-label="Project categories">
+					<button class="filter-button is-selected" type="button" data-filter="all" role="tab">Projects</button>
+					<button class="filter-button" type="button" data-filter="web" role="tab">Web Design</button>
+					<button class="filter-button" type="button" data-filter="graphic" role="tab">Graphic Design</button>
+				</div>
+				<div class="project-grid">
+					<article class="project-card" data-category="web">
+						<div class="project-number">01</div>
+						<h3>Achter de Reactie</h3>
+						<p>Web design / Editorial concept</p>
+						<a href="#contact" aria-label="Ask about Achter de Reactie">View project <span>↗</span></a>
+					</article>
+					<article class="project-card project-card--pink" data-category="graphic">
+						<div class="project-number">02</div>
+						<h3>Visual stories</h3>
+						<p>Graphic design / Identity</p>
+						<a href="#contact" aria-label="Ask about Visual stories">View project <span>↗</span></a>
+					</article>
+					<article class="project-card project-card--dark" data-category="web">
+						<div class="project-number">03</div>
+						<h3>New perspectives</h3>
+						<p>Web design / Art direction</p>
+						<a href="#contact" aria-label="Ask about New perspectives">View project <span>↗</span></a>
+					</article>
+				</div>
+			</section>
+
+			<section class="about section-rule" id="about">
+				<p class="eyebrow">03 / About</p>
+				<h2>Curious by nature,<br /><em>precise by choice.</em></h2>
+			</section>
+		</main>
+
+		<footer class="site-footer section-rule" id="contact">
+			<div>
+				<p class="eyebrow">04 / Contact</p>
+				<h2>Let’s make<br /><strong>something.</strong></h2>
+			</div>
+			<a class="email-link" href="mailto:hello@indyteunissen.nl">hello@indyteunissen.nl <span>↗</span></a>
+		</footer>
+	</body>
+</html>
